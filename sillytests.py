@@ -1,8 +1,11 @@
-string = 'Scrr meu senhor ajuda'
+import colorful as cf
 
+
+string = 'primeiro teste colorindo strings'
 
 for i in range(len(string)):
-    print(i)
-    x = string[i]
-    if (x.islower()):
-        print('ihuu')
+    if i%2 == 0:
+        string[i] = cf.bold_white(string[i])
+        
+
+print(string)
